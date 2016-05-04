@@ -1,0 +1,29 @@
+Ocean Ship Logbooks 1750-1850 K-means implementation
+
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='euclidean',
+           metric_params=None, n_jobs=1, n_neighbors=7, p=2,
+           weights='distance')
+
+Feature vector: latitude, longitude, UTC, year, month
+Target variable: Nationality
+
+             precision    recall  f1-score   support
+
+   American       1.00      1.00      1.00       200
+    British       0.99      1.00      0.99     86096
+   British        1.00      1.00      1.00       213
+      Dutch       1.00      0.99      1.00    115406
+     French       1.00      0.95      0.97      6601
+    Hamburg       1.00      0.99      0.99        68
+    Spanish       1.00      1.00      1.00     44333
+
+avg / total       0.99      0.99      0.99    252917
+
+Confusion Matrix
+[[   200      0      0      0      0      0      0]
+ [     0  86056      0     11      0      0     29]
+ [     0      0    213      0      0      0      0]
+ [     0    735      0 114671      0      0      0]
+ [     0    113      0    225   6263      0      0]
+ [     0      0      0      1      0     67      0]
+ [     0    154      0     37      6      0  44136]]

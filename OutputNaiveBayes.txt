@@ -1,0 +1,27 @@
+Ocean Ship Logbooks 1750-1850 K-means implementation
+
+GaussianNB()
+
+Feature vector: latitude, longitude, UTC, year, month
+Target variable: Nationality
+
+             precision    recall  f1-score   support
+
+   American       0.00      0.00      0.00       200
+    British       0.40      0.59      0.47     86096
+   British        0.00      0.00      0.00       213
+      Dutch       0.59      0.64      0.61    115406
+     French       0.00      0.00      0.00      6601
+    Hamburg       0.00      0.00      0.00        68
+    Spanish       0.00      0.00      0.00     44333
+
+avg / total       0.40      0.49      0.44    252917
+
+Confusion Matrix
+[[    0     0     0   200     0     0     0]
+ [    0 50742     0 35354     0     0     0]
+ [    0   119     0    94     0     0     0]
+ [    0 41728     0 73678     0     0     0]
+ [    0  3310     0  3291     0     0     0]
+ [    0     3     0    65     0     0     0]
+ [    0 32458     0 11875     0     0     0]]
